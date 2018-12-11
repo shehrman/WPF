@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Träning"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="400">
+        Title="MainWindow" Height="250" Width="450">
     <Window.Resources>
         <Style TargetType="Button" x:Key="btn1">
             <Setter Property="Background" Value="Red"></Setter>
@@ -86,13 +86,33 @@
         <Button Content="Hello" Margin="5"></Button>
 
     </WrapPanel>-->
+    <!--
 
     <Canvas Background="Beige" Margin="0,92,130.6,74.4">
         <Button RenderTransformOrigin="0.5,0.5" Canvas.Left="80" Canvas.Top="66" Width="140" Height="19" >Enter</Button>
         <TextBlock Canvas.Left="10" Canvas.Top="38" RenderTransformOrigin="0.535,1.55" Width="65">Enter here:</TextBlock>
         <TextBox Canvas.Left="80" Canvas.Top="37" Width="140">somthing</TextBox>
-    </Canvas>
+    </Canvas>-->
 
+ 
+    <!--<login page>-->
 
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
 
+        <TextBlock Grid.Column="0" Grid.Row="0" Margin="0,48,0,0.4">Email:</TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Width="295" Margin="16,40,0,1.8"/>
+        <TextBlock Grid.Column="0" Grid.Row="1" Margin="0,9.6,0,4.8"> Passord:</TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="1" Margin="16,3.2,1,5"/>
+        <Button Grid.Column="1" Grid.Row="2" Margin="241,10.2,0.2,38.6" RenderTransformOrigin="0.402,0.532">Loge in</Button>
+
+    </Grid>
 </Window>
