@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Träning"
         mc:Ignorable="d"
         Title="Logicaltree_and_Visual_Tree" Height="300" Width="500">
-    <StackPanel Margin="50,50,49.6,34.4" Background="AliceBlue">
+    <!--<StackPanel Margin="50,50,49.6,34.4" Background="AliceBlue">
         <StackPanel Margin="0 0 0 0" Background="Beige">
 
         </StackPanel>
@@ -16,5 +16,27 @@
             <Button Content="Hello" Margin="20 0 20 0"></Button>
 
         </StackPanel>
-    </StackPanel>
+    </StackPanel>-->
+
+    <WrapPanel Margin="20" Orientation="Horizontal">
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+
+    </WrapPanel>
 </Window>

@@ -21,7 +21,7 @@
         </Style>
     </Window.Resources>
   
-    <Grid VirtualizingPanel.ScrollUnit="Item" Margin="20 20 20 20">
+    <!--<Grid VirtualizingPanel.ScrollUnit="Item" Margin="20 20 20 20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -63,5 +63,29 @@
         </Button>
 
 
-    </Grid>
+    </Grid>-->
+
+    <WrapPanel Margin="20" Orientation="Horizontal">
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+        <Button Content="Hello" Margin="5"></Button>
+
+    </WrapPanel>
+
+
 </Window>
