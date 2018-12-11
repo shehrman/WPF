@@ -5,8 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Träning"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="400" Width="400">
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="btn1">
+            <Setter Property="Background" Value="Red"></Setter>
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontFamily" Value="4"></Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="bt0">
+            <Setter Property="Background" Value="Black"></Setter>
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontFamily" Value="4"></Setter>
+        </Style>
+    </Window.Resources>
+  
+    <Grid VirtualizingPanel.ScrollUnit="Item" Margin="20 20 20 20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Button Content="" Width="50" Height="25" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"  Style ="{StaticResource btn1}" Margin="2 20 40 0"></Button>
+        <Button Content="Blue" Width="150" Height="20"  Grid.Column="5" Grid.Row="1" Grid.ColumnSpan="4" Style="{StaticResource bt0}"></Button>
+        <Button Content="I am a button " Width="150" Height="20" Grid.Column="5" Grid.Row="3" Grid.ColumnSpan="4">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="blue"></Setter>
+                    <Setter Property="BorderThickness" Value="3"></Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Beige"></Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+
     </Grid>
 </Window>
